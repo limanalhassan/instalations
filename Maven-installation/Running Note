@@ -1,0 +1,173 @@
+
+Maven:
+Build Tools:  
+===========
+  SDLC-->
+Devops Process:
+  Devops--> Coding --> Build --> Testing--> Deployed  
+            Coding --> Testing--> Build -->  Deployed 
+
+  Used to create packages for deployment  -- Tomcat
+
+  use to create deployable packages  
+     raw code + build = packages that the deployment servers can interpretes 
+
+What kind of projects are you supporting in Landmark?
+
+JAVA  = We support java based projects
+        
+java, .NET, NodeJS is a programming language
+--------------------------------------
+JAVA:
+  ANt   ---- build.xml
+    1000Lines with ANt 
+    400LINES WITH MAVEN
+    
+ Maven  --- pom.xml
+ Gradle  -- build.gradle
+ gitHub projectRepo_TD :
+      BuildScripts 
+      src(sourceCode) 
+      unitTestCases
+
+.Net:
+----
+  Nant
+  MSBuild
+
+JAVASCRIPT:
+-----------
+  Gulp
+  Grunt
+
+Python
+-------
+  PyBuilder
+
+NodeJS:
+  npm
+  
+==== 
+Maven Build Tools:
+-----------------
+https://maven.apache.org/download.cgi
+
+MAVEN = is an open source Java BASED 
+          Build  tool
+
+=================
+Build means: 
+  compiling and creating deployable packages from codes.
+  Hello.java  --> 
+  hello.py    --> 
+
+Run software writen in Java = javac Hello.java  ---> 
+jvm = Java Virtual Machine 
+
+----
+Maven installation:
+1. Maven can be installed in Any platform 
+  
+
+2. Java is a pre-requisite for maven to run 
+    JRE --> JAVA RUNTIME ENVIRONMENT
+    JDK --> JAVA DEVELOPMENT KIT 1.8+
+            JVM will also be installed
+
+3. PUBLICip = 44.203.69.102
+   userName = ec2-user 
+   authentication = ssh_private_key = c27.pem 
+   
+===============================================
+Maven Home Directory = MHD  (/opt/maven) = /app/maven)
+This is where maven software is downloaded and extracted 
+  Downlaod - wget wget https://dlcdn.apache.org/maven/maven-3/3.8.3.zip 
+  Uzip - the file
+ 
+Maven Files
+ ==========
+   bin -- binary files / commands    
+   conf -- configuration files 
+           settings.xml
+   lib  -- jar files  
+   LICENSE  
+   NOTICE  
+   README.txt
+-------------
+ 
+maven: creates packages (jar, war and/OR ear)
+  jar: Standalone Applications
+    ebay.jar
+    paypal.jar
+    rbc.jar 
+  
+Standalone Applications – *.jar  Java Archieve
+=============================================
+ java code ONLY   
+    contains only java classes
+    jar = .classfiles
+    maven-stanalone-application.jar
+
+Web Applications  – .war  web Archieve
+======================================
+Java code + 
+web content (HTML, CSS, JS, images…,) 
+Backend code   - frontend code
+
+maven-web-application.war
+
+
+Enterprise applications – .ear –
+==================================
+ Enterprise Archieve
+    Multiple Modules
+      Java code + web content 
+    Ear =  war(s) + jar(s)
+    Banking applications
+    maven-web-application.war
+    maven-enterprise-application.ear
+
+Based on our project we going to create 
+   multiple either;  jar, war or ear packages:
+===========================
+What are we building?
+ we are building java codes:
+   src-- source code (raw code)
+   Unit-Test-Cases 
+      JAVA  --> JUnit test cases 
+      .Net  --> NUnit test cases 
+      C++  --> CPPUnit test cases 
+      
+ 
+ buildScripts:  pom.xml
+     html     = hyperText mark-up language
+               comes with pre-define tags that can't be changed  
+               
+     TAGS: h1 h2 h3 p
+              <h1>code</h1> 
+               <h1>Welcome to Landmark Technologies</h1>
+               <server>Welcome to Landmark Technologies</server> error
+         
+     pom.xml  = extensible mark-up language 
+           It doesn't come with pre-define tags that. It's dynamic 
+           <id>12457ih</id>
+           <name>Simon</name>
+     <name>Fotso</name>
+     
+ java-code:
+  src
+    Main
+      application-code 
+      
+    test 
+       unit test cases 
+       
+  buildScripts
+    maven buildScripts is pom.xml 
+      xml = extenable mark-up language 
+
+
+
+
+
+
